@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 1 -->
+    <div class="container">
+      <h1>Список задач</h1>
+      <input id="taskInput" placeholder="Нова задача" />
+      <button id="btn">Додати</button>
+      <button id="clearBtn">Очистити</button>
+      <ul id="taskList"></ul>
+    </div>
+    <!-- 2 -->
+    <div class="container">
+      <h2>Вхід</h2>
+      <input type="text" id="login" placeholder="Логін" />
+      <input type="password" id="password" placeholder="Пароль" />
+      <button onclick="saveUser()">Зберегти</button>
+      <button onclick="checkUser()">Перевірити</button>
+      <p id="userMessage"></p>
+    </div>
+    <!-- 3 -->
+    <div class="container">
+      <h2>Закладки</h2>
+      <input type="text" id="bookmark" placeholder="URL" />
+      <button onclick="addBookmark()">Додати</button>
+      <ul id="bookmarksList"></ul>
+    </div>
+    <!-- 4 -->
+    <div class="container">
+      <h2>Контакти</h2>
+      <input type="text" id="name" placeholder="Ім'я" />
+      <input type="text" id="surname" placeholder="Прізвище" />
+      <input type="text" id="phone" placeholder="Телефон" />
+      <input type="email" id="email" placeholder="Email" />
+      <button onclick="addContact()">Додати контакт</button>
+      <ul id="contactsList"></ul>
+
+      <script src="./index.js"></script>
+    </div>
+  </body>
+</html>
